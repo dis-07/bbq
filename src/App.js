@@ -17,6 +17,15 @@ import image5 from './components/images/NavBar/05.png'
 import image6 from './components/images/NavBar/06.png'
 import image7 from './components/images/NavBar/07.png'
 
+import img1 from './components/images/Dishes/01.png'
+import img2 from './components/images/Dishes/02.png'
+import img3 from './components/images/Dishes/03.png'
+import img4 from './components/images/Dishes/04.png'
+import img5 from './components/images/Dishes/05.png'
+import img6 from './components/images/Dishes/06.png'
+import img7 from './components/images/Dishes/07.png'
+import img8 from './components/images/Dishes/08.png'
+
 const navBarData = [
   { 
     id: 1,
@@ -97,6 +106,144 @@ const navBarData = [
 
 ]
 
+const DishesData = [
+  {
+    id: 1,
+    info: 'Мангал',
+    title: 'Сыр на мангале с лимонно-медовой заправкой',
+    price: '29 грн',
+    minus: '-',
+    plus: '+',
+    quantity: '',
+    order: 'Заказать',
+    image:{
+      src: img1,
+      alt: '',
+      width: 275,
+      height:180
+    }
+  },
+
+  {
+    id: 2,
+    info: 'Бургеры',
+    title: 'Куриный бургер-сет ',
+    price: '60 грн',
+    minus: '-',
+    plus: '+',
+    quantity: '',
+    order: 'Заказать',
+    image:{
+      src: img2,
+      alt: '',
+      width: 275,
+      height:180
+    }
+  },
+
+  {
+    id: 3,
+    info: 'Мангал',
+    title: 'Большой денер',
+    price: ' ',
+    minus: '-',
+    plus: '+',
+    quantity: '',
+    order: 'Заказать',
+    image:{
+      src: img3,
+      alt: '',
+      width: 275,
+      height:180
+    }
+  },
+
+  {
+    id: 4,
+    info: 'Мангал',
+    title: 'Большое мясо в лаваше',
+    price: '37 грн',
+    minus: '-',
+    plus: '+',
+    quantity: '',
+    order: 'Заказать',
+    image:{
+      src: img4,
+      alt: '',
+      width: 275,
+      height:180
+    }
+  },
+
+  {
+    id: 5,
+    info: 'Мангал',
+    title: 'Картофель с костра',
+    price: '25 грн',
+    minus: '-',
+    plus: '+',
+    quantity: '',
+    order: 'Заказать',
+    image:{
+      src: img5,
+      alt: '',
+      width: 275,
+      height:180
+    }
+  },
+
+  {
+    id: 6,
+    info: 'Шашлык',
+    title: 'Шашлык из свинины «BBQ» ',
+    price: '54 грн',
+    minus: '-',
+    plus: '+',
+    quantity: '',
+    order: 'Заказать',
+    image:{
+      src: img6,
+      alt: '',
+      width: 275,
+      height:180
+    }
+  },
+
+  {
+    id: 7,
+    info: 'Бургеры',
+    title: 'Бургер с мясом и сыром «Чеддер»',
+    price: 'от 80 грн',
+    minus: '-',
+    plus: '+',
+    quantity: '',
+    order: 'Заказать',
+    image:{
+      src: img7,
+      alt: '',
+      width: 275,
+      height:180
+    }
+  },
+
+  {
+    id: 8,
+    info: 'Бургеры',
+    title: 'Сет «Z-Бургер»',
+    price: 'от 110 грн',
+    minus: '-',
+    plus: '+',
+    quantity: '',
+    order: 'Заказать',
+    image:{
+      src: img8,
+      alt: '',
+      width: 275,
+      height:180
+    }
+  },
+]
+
 class App extends React.Component {
 render = () => (
   <Container>
@@ -105,7 +252,7 @@ render = () => (
         <NavBar items={navBarData} />
       </Col>
       <Col xs={12}>
-        <Dishes />
+        <Dishes items={DishesData} />
       </Col>
     </Row>
   </Container>

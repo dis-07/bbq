@@ -5,31 +5,27 @@ class DishesItem extends React.Component {
         <div className="DishesItem">
             <div className="Dishes__imageBox">
                 <img 
-                src="https://placehold.it/413x268" 
+                src={this.props.image.src} 
                 alt="" 
                 className="Dishes__image"
-                width="413"
-                height="268"
+                width={this.props.image.width}
+                height={this.props.image.height}
                 />
             </div>
-            <span className="infoItem">
-
+            <span className="infoItem">{this.props.info}
             </span>
-            <span className="titleItem">
-
+            <span className="titleItem">{this.props.title}
             </span>
-            <span className="priceItem">
-
+            <span className="priceItem">{this.props.price}
             </span>
-            <button className="minusItem">
-                
+            <button className="minusItem">{this.props.minus}
             </button>
-            <input type="number" className="quantityItem"/>
-            <button className="plusItem">
-
+            <div className="quantityItemInput">
+                <input type="number" className="quantityItem"/>{this.props.quantity}
+            </div>
+            <button className="plusItem">{this.props.plus}
             </button>
-            <button className="orderItem">
-
+            <button className="orderItem">{this.props.order}
             </button>
         </div>
     )

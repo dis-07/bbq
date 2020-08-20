@@ -1,0 +1,139 @@
+.Dishes {
+    display: flex;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    align-self: start;
+}
+
+.DishesItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 275px;
+    height: 375px;
+    margin-right: 34px;
+}
+
+.Dishes__imageBox {
+    width: 275px;
+    height: 180px;
+    display: flex;
+}
+
+
+.Dishes__image {
+    max-width: 100%;
+    width: auto;
+    min-height: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+
+.infoItem {
+    display: block;
+    width: 275px;
+    height: 14px;
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 15px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #D8D8D8;
+
+}
+
+.titleItem {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 11px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 245px;
+    height: 41px;
+    justify-content: center;
+
+    color: #363636;
+}
+
+.priceItem {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    width: 245px;
+    height: 23px;
+    margin-bottom: 10px;
+    text-align: center;
+
+    color: #474747;
+}
+
+.minusItem {
+    padding: 0;
+    border: none;
+    font: inherit;
+    background-color: transparent;
+    font-size: 16px;
+    line-height: 19px;
+
+    width: 10px;
+    height: 19px;
+    justify-content: left;
+
+    color: #10B4A4;
+}
+
+.quantityItemInput {
+    border: 1px solid #D8D8D8;
+    box-sizing: border-box;
+    width: 34px;
+    height: 40px;
+    margin-bottom: 21px;
+}
+
+.quantityItem {
+    width: 20px;
+    height: 19px;
+    font-size: 16px;
+    line-height: 19px;
+    border: none;
+    text-align: center;
+
+    color: #363636;
+}
+
+.plusItem {
+    padding: 0;
+    border: none;
+    font: inherit;
+    background-color: transparent;
+    font-size: 16px;
+    line-height: 19px;
+
+    width: 9px;
+    height: 19px;
+
+    color: #10B4A4;
+}
+
+.orderItem {
+    border: 2px solid #10B4A4;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 19px;
+    width: 115px;
+    height: 40px;
+
+
+    text-align: center;
+
+    color: #363636;
+}
+
